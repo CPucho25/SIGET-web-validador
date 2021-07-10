@@ -25,7 +25,8 @@ namespace ServicioWeb
     //"Server= Data Source= tcp:10.20.103.68,49172\\SQLEXPRESS;Database=Ticket_DgTAX;Trusted_Connection=True;";
     public class WS : System.Web.Services.WebService
     {
-        public string cadenaconexion = "Data Source= tcp:10.20.103.68,49172\\SQLEXPRESS; Database=Ticket_DgTAX;Trusted_Connection=True;";
+        //public string cadenaconexion = "Data Source= tcp:10.20.103.68,49172\\SQLEXPRESS; Database=Ticket_DgTAX;Trusted_Connection=True;";
+        public string cadenaconexion = "Data Source= tcp:10.20.103.132,58526\\SQLEXPRESS;Initial Catalog=Ticket_DgTAX; Integrated Security=True;";
         //public string cadenaconexion = "Data Source= PE2313880W1\\SQLEXPRESS2014; Database=Ticket_DgTAX;Trusted_Connection=True;";
         [WebMethod]
         public string RetornarAcceso(string correo, string contraseña)
